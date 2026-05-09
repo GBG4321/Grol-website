@@ -1,0 +1,13 @@
+{
+  "name": "grol-website",
+  "version": "1.0.0",
+  "description": "Grol Media website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Static site - no build required'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
