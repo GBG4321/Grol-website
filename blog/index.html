@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9TG3KL4B4D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9TG3KL4B4D');
+</script>
+<title>Blog | Grol Media</title>
+<meta name="description" content="SaaS marketing insights you can't find everywhere - field notes on paid acquisition, lifecycle, and product-led growth from the Grol Media team." />
+
+<link rel="icon" type="image/png" href="../assets/grol_logo.png" />
+<link rel="apple-touch-icon" href="../assets/grol_logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      fontFamily: {
+        sans: ['Inter','ui-sans-serif','system-ui','sans-serif'],
+        serif: ['"Instrument Serif"','ui-serif','Georgia','serif'],
+      },
+      colors: {
+        background: 'hsl(0 0% 0%)',
+        foreground: 'hsl(0 0% 100%)',
+        'muted-foreground': 'hsl(0 0% 65%)',
+      },
+    } },
+  };
+</script>
+<link rel="stylesheet" href="../assets/grol-pages.css" />
+<style>
+  .blog-tab {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    color: hsl(0 0% 65%);
+    transition: color .2s, background .2s, border-color .2s;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  .blog-tab:hover { color: #fff; }
+  .blog-tab.active {
+    color: #000;
+    background: #fff;
+    font-weight: 500;
+  }
+  .blog-search {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 999px;
+    color: #fff;
+    transition: border-color .2s, background .2s;
+  }
+  .blog-search:focus-within {
+    border-color: rgba(255,255,255,0.35);
+    background: rgba(255,255,255,0.06);
+  }
+  .blog-search input::placeholder { color: hsl(0 0% 50%); }
+  .post-card {
+    display: block;
+    background: linear-gradient(180deg, rgba(255,255,255,0.035) 0%, rgba(255,255,255,0.01) 100%);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    transition: border-color .25s, transform .25s, background .25s;
+  }
+  .post-card:hover {
+    border-color: rgba(255,255,255,0.28);
+    transform: translateY(-3px);
+    background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  }
+  .post-cat {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: hsl(0 0% 60%);
+  }
+  .post-readlink {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #fff;
+    font-size: 14.5px;
+    font-weight: 500;
+  }
+  .post-readlink svg { transition: transform .25s; }
+  .post-card:hover .post-readlink svg { transform: translateX(4px); }
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="fixed top-0 left-0 right-0 z-50 nav-divider bg-black/60 backdrop-blur-md supports-[backdrop-filter]:bg-black/40">
+  <div class="max-w-7xl mx-auto px-4 md:px-10 h-16 md:h-20 flex md:grid md:grid-cols-3 items-center justify-between">
+    <a href="../" class="flex items-center gap-2 md:justify-self-start" style="text-decoration:none;color:#fff">
+      <img src="../assets/grol_logo_v2.png" alt="Grol Media" class="w-9 h-9 md:w-12 md:h-12 object-contain block" />
+      <span class="text-[14px] md:text-[15px] font-medium tracking-tight leading-none">Grol Media</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-8 text-sm text-muted-foreground md:justify-self-center">
+      <div class="nav-item">
+        <a href="../#services" class="hover:text-white transition-colors inline-flex items-center gap-1.5">Services <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-top:1px"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav-dd">
+          <div class="nav-dd-panel">
+            <a class="nav-dd-item" href="../meta-ads-for-saas/">
+              <span>
+                <span class="nav-dd-title">Meta Ads built for SaaS</span>
+                <span class="nav-dd-sub">Full-funnel paid acquisition</span>
+              </span>
+            </a>
+            <a class="nav-dd-item" href="../email-flows/">
+              <span>
+                <span class="nav-dd-title">Email flows that compound</span>
+                <span class="nav-dd-sub">Lifecycle &amp; retention systems</span>
+              </span>
+            </a>
+            <a class="nav-dd-item" href="../product-advice/">
+              <span>
+                <span class="nav-dd-title">Product-level advice</span>
+                <span class="nav-dd-sub">Insights &amp; optimization</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="../#pricing" class="hover:text-white transition-colors">Pricing</a>
+      <a href="../blog/" class="hover:text-white transition-colors text-white">Blog</a>
+    </div>
+
+    <div class="flex items-center gap-2 md:justify-self-end">
+      <a href="https://calendly.com/grolmedia-agency/30min" onclick="event.preventDefault(); if(window.Calendly){Calendly.initPopupWidget({url:'https://calendly.com/grolmedia-agency/30min'});}else{window.open('https://calendly.com/grolmedia-agency/30min','_blank');}"
+         class="text-xs md:text-sm font-medium px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-white/15 hover:border-white/40 hover:bg-white/5 transition-colors whitespace-nowrap cursor-pointer">
+        <span class="hidden sm:inline">Get a Marketing Plan</span>
+        <span class="sm:hidden">Get a Plan</span>
+      </a>
+      <button type="button" id="navToggle" aria-label="Menu" aria-expanded="false"
+        class="md:hidden inline-flex flex-col justify-center items-center w-9 h-9 rounded-full border border-white/15 hover:border-white/40 transition-colors cursor-pointer" style="gap:5px">
+        <span class="nav-bar1" style="display:block;width:16px;height:1.5px;background:#fff;transition:transform .3s"></span>
+        <span class="nav-bar2" style="display:block;width:16px;height:1.5px;background:#fff;transition:transform .3s"></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="navMobile" class="md:hidden border-t border-white/10" style="overflow:hidden;max-height:0;opacity:0;border-top-width:0;transition:max-height .3s ease,opacity .3s ease">
+    <div class="bg-black/95 backdrop-blur-md px-4 py-4 flex flex-col gap-1">
+      <span class="text-[11px] uppercase tracking-[0.18em] text-muted-foreground px-2 mb-1" style="font-size:11px">Services</span>
+      <a class="block rounded-lg hover:bg-white/5 transition-colors" style="padding:10px 8px;font-size:15px;color:rgba(255,255,255,0.85)" href="../meta-ads-for-saas/">Meta Ads built for SaaS</a>
+      <a class="block rounded-lg hover:bg-white/5 transition-colors" style="padding:10px 8px;font-size:15px;color:rgba(255,255,255,0.85)" href="../email-flows/">Email flows that compound</a>
+      <a class="block rounded-lg hover:bg-white/5 transition-colors" style="padding:10px 8px;font-size:15px;color:rgba(255,255,255,0.85)" href="../product-advice/">Product-level advice</a>
+      <div style="height:1px;background:rgba(255,255,255,0.08);margin:6px 8px"></div>
+      <a class="block rounded-lg hover:bg-white/5 transition-colors" style="padding:10px 8px;font-size:15px;color:rgba(255,255,255,0.85)" href="../#pricing">Pricing</a>
+      <a class="block rounded-lg hover:bg-white/5 transition-colors" style="padding:10px 8px;font-size:15px;color:rgba(255,255,255,0.85)" href="../blog/">Blog</a>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      var t=document.getElementById('navToggle'),m=document.getElementById('navMobile');
+      if(!t||!m)return;
+      var b1=t.querySelector('.nav-bar1'),b2=t.querySelector('.nav-bar2'),open=false;
+      t.addEventListener('click',function(){
+        open=!open;
+        t.setAttribute('aria-expanded',open);
+        m.style.maxHeight=open?'24rem':'0';
+        m.style.opacity=open?'1':'0';
+        m.style.borderTopWidth=open?'1px':'0';
+        b1.style.transform=open?'translateY(3.25px) rotate(45deg)':'';
+        b2.style.transform=open?'translateY(-3.25px) rotate(-45deg)':'';
+      });
+    })();
+  </script>
+</nav>
+
+<main id="main">
+<!-- Hero -->
+<header class="relative w-full overflow-hidden bg-black">
+  <canvas id="px-hero" class="absolute inset-0 z-0 block w-full h-full pointer-events-none" aria-hidden="true"></canvas>
+  <div class="absolute inset-0 z-0 pointer-events-none" style="background: radial-gradient(ellipse at 50% 20%, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0) 55%)"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-10 pt-[120px] md:pt-[160px] pb-12 md:pb-16 text-center">
+    <span class="reveal block text-[11px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mb-5">Blog</span>
+    <h1 class="reveal text-[2.1rem] sm:text-5xl md:text-[3.75rem] font-medium leading-[1.08] mb-6" style="letter-spacing:-1px">
+      SaaS marketing insights<br class="hidden sm:block" /> you <span class="font-serif italic font-normal">can't</span> find everywhere
+    </h1>
+    <p class="reveal text-[15.5px] md:text-[18px] leading-[1.6] text-muted-foreground max-w-xl mx-auto">
+      Field notes from running paid acquisition, lifecycle, and product-led growth for SaaS - no recycled advice, no fluff.
+    </p>
+  </div>
+</header>
+
+<!-- Posts -->
+<section class="relative w-full bg-black overflow-hidden">
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pb-24 md:pb-32">
+
+    <!-- Filter row -->
+    <div class="reveal flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-9 md:mb-12 border-b border-white/8 pb-6">
+      <div class="flex items-center gap-2 flex-wrap" id="blogTabs">
+        <button type="button" class="blog-tab active" data-filter="all">All</button>
+        <button type="button" class="blog-tab" data-filter="Insights">Insights</button>
+        <button type="button" class="blog-tab" data-filter="Guides">Guides</button>
+        <button type="button" class="blog-tab" data-filter="Company">Company</button>
+      </div>
+    </div>
+
+    <!-- Featured post -->
+    <a href="../increase-saas-activation-rate/" class="post-card reveal grid grid-cols-1 md:grid-cols-2" data-category="Guides">
+      <div class="relative min-h-[220px] md:min-h-[340px] bg-black">
+        <img src="../assets/og-saas-activation-rate.png" alt="Easiest way to increase your SaaS activation rate" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1200" height="630" />
+      </div>
+      <div class="p-6 sm:p-8 md:p-10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="post-cat">Guides</span>
+          <span class="opacity-30 text-xs">·</span>
+          <span class="text-xs text-muted-foreground">12 min read</span>
+        </div>
+        <h2 class="text-[1.6rem] sm:text-[2rem] md:text-[2.25rem] font-medium leading-[1.12] mb-4" style="letter-spacing:-0.6px">
+          Easiest way to increase your SaaS <span class="font-serif italic font-normal">activation</span> rate
+        </h2>
+        <p class="text-[15px] md:text-[16px] leading-[1.6] text-muted-foreground mb-7">
+          A SaaS marketing agency's playbook for turning more free trials into paying customers - onboarding, email sequences, in-app nudges, support and urgency.
+        </p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="post-readlink">Read article
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="text-xs text-muted-foreground">Grol Media</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Post: Best B2B SaaS funnels -->
+    <a href="../best-b2b-saas-funnels/" class="post-card reveal grid grid-cols-1 md:grid-cols-2 mt-6 md:mt-8" data-category="Guides">
+      <div class="relative min-h-[220px] md:min-h-[340px] bg-black">
+        <img src="../assets/og-best-b2b-saas-funnels.png" alt="Best B2B SaaS funnels - a founder's guide to what actually works" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1200" height="630" />
+      </div>
+      <div class="p-6 sm:p-8 md:p-10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="post-cat">Guides</span>
+          <span class="opacity-30 text-xs">·</span>
+          <span class="text-xs text-muted-foreground">16 min read</span>
+        </div>
+        <h2 class="text-[1.6rem] sm:text-[2rem] md:text-[2.25rem] font-medium leading-[1.12] mb-4" style="letter-spacing:-0.6px">
+          Best B2B SaaS <span class="font-serif italic font-normal">funnels</span>
+        </h2>
+        <p class="text-[15px] md:text-[16px] leading-[1.6] text-muted-foreground mb-7">
+          Our honest take on every B2B SaaS acquisition channel worth considering in 2026 - Meta funnels, LinkedIn, SEO, TikTok, Reddit and more - and where each one tends to fall apart.
+        </p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="post-readlink">Read article
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="text-xs text-muted-foreground">Grol Media</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Post: Meta Ads strategy -->
+    <a href="../meta-ads-strategy-for-saas/" class="post-card reveal grid grid-cols-1 md:grid-cols-2 mt-6 md:mt-8" data-category="Guides">
+      <div class="relative min-h-[220px] md:min-h-[340px] bg-black">
+        <img src="../assets/og-meta-ads-strategy-saas.png" alt="Meta Ads strategy for SaaS - the full-funnel acquisition playbook" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1200" height="630" />
+      </div>
+      <div class="p-6 sm:p-8 md:p-10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="post-cat">Guides</span>
+          <span class="opacity-30 text-xs">·</span>
+          <span class="text-xs text-muted-foreground">10 min read</span>
+        </div>
+        <h2 class="text-[1.6rem] sm:text-[2rem] md:text-[2.25rem] font-medium leading-[1.12] mb-4" style="letter-spacing:-0.6px">
+          Meta Ads for <span class="font-serif italic font-normal">SaaS</span>: the full-funnel strategy that works
+        </h2>
+        <p class="text-[15px] md:text-[16px] leading-[1.6] text-muted-foreground mb-7">
+          The exact 6-step strategy we use to turn Meta into a real acquisition channel for SaaS - from choosing the funnel to full-funnel creative, retargeting, and scaling toward a 3:1 LTV/CAC.
+        </p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="post-readlink">Read article
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="text-xs text-muted-foreground">Grol Media</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Post: get clients 2026 -->
+    <a href="../blog-get-clients-for-your-saas-2026/" class="post-card reveal grid grid-cols-1 md:grid-cols-2 mt-6 md:mt-8" data-category="Insights">
+      <div class="relative min-h-[220px] md:min-h-[340px] bg-black">
+        <img src="../assets/blog-cover-get-saas-clients-2026.png" alt="The best way to get clients for your SaaS in 2026" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1200" height="630" />
+      </div>
+      <div class="p-6 sm:p-8 md:p-10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="post-cat">Insights</span>
+          <span class="opacity-30 text-xs">·</span>
+          <span class="text-xs text-muted-foreground">8 min read</span>
+        </div>
+        <h2 class="text-[1.6rem] sm:text-[2rem] md:text-[2.25rem] font-medium leading-[1.12] mb-4" style="letter-spacing:-0.6px">
+          The best way to get clients for your <span class="font-serif italic font-normal">SaaS</span> in 2026
+        </h2>
+        <p class="text-[15px] md:text-[16px] leading-[1.6] text-muted-foreground mb-7">
+          Cold DMs cost you months. Paid ads cost you cash and hand back something more valuable - fast, honest data on who actually buys. Here's how Google, Meta, Reddit, LinkedIn and X stack up for SaaS, and which one to start with.
+        </p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="post-readlink">Read article
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="text-xs text-muted-foreground">Grol Media</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Post: B2B SaaS ad funnels -->
+    <a href="../blog-ad-funnels-for-b2b-saas/" class="post-card reveal grid grid-cols-1 md:grid-cols-2 mt-6 md:mt-8" data-category="Guides">
+      <div class="relative min-h-[220px] md:min-h-[340px] bg-black">
+        <img src="../assets/og-b2b-saas-funnels.png" alt="Meta Ads SaaS funnels - the five best ad funnels for B2B SaaS" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1200" height="630" />
+      </div>
+      <div class="p-6 sm:p-8 md:p-10 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="post-cat">Guides</span>
+          <span class="opacity-30 text-xs">·</span>
+          <span class="text-xs text-muted-foreground">8 min read</span>
+        </div>
+        <h2 class="text-[1.6rem] sm:text-[2rem] md:text-[2.25rem] font-medium leading-[1.12] mb-4" style="letter-spacing:-0.6px">
+          The best ad funnels for <span class="font-serif italic font-normal">B2B SaaS</span> (Meta Ads)
+        </h2>
+        <p class="text-[15px] md:text-[16px] leading-[1.6] text-muted-foreground mb-7">
+          Most B2B SaaS founders don't have a traffic problem - they have a funnel problem. Here are the five Meta ad funnels worth running, who each one is for, and exactly when to use it.
+        </p>
+        <div class="mt-auto flex items-center justify-between">
+          <span class="post-readlink">Read article
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="text-xs text-muted-foreground">Grol Media</span>
+        </div>
+      </div>
+    </a>
+
+    <p id="blogEmpty" class="hidden text-center text-muted-foreground py-16 text-[15px]">No posts in this category yet - check back soon.</p>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="relative w-full bg-black border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-8 md:py-10 flex flex-col md:flex-row items-center justify-between gap-5 text-[13px] md:text-sm text-muted-foreground">
+    <div class="flex items-center gap-2.5">
+      <img src="../assets/grol_logo_v2.png" alt="Grol Media" class="w-7 h-7 object-contain" />
+      <span class="text-white/80">Grol Media</span>
+      <span class="opacity-40">·</span>
+      <span>Bulgaria</span>
+    </div>
+    <a href="../privacy-policy/" class="hover:text-white transition-colors underline-offset-4 hover:underline">Privacy Policy</a>
+  </div>
+</footer>
+
+<script src="../assets/particles.js"></script>
+<script src="../assets/image-slot.js"></script>
+<script>
+  (function () {
+    function showAll() { document.documentElement.classList.add('reveal-fallback'); }
+    try { window.initReveal(); } catch (e) {}
+    try {
+      var hero = document.getElementById('px-hero');
+      if (hero) window.initParticles(hero, { speed: 0.55, opacity: [0.16, 0.46] });
+    } catch (e) {}
+    setTimeout(showAll, 1400);
+    window.addEventListener('load', function () { setTimeout(showAll, 200); });
+
+    var tabs = document.querySelectorAll('#blogTabs .blog-tab');
+    var cards = document.querySelectorAll('.post-card[data-category]');
+    var empty = document.getElementById('blogEmpty');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var filter = tab.getAttribute('data-filter');
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        tab.classList.add('active');
+        var visible = 0;
+        cards.forEach(function (card) {
+          var show = filter === 'all' || card.getAttribute('data-category') === filter;
+          card.style.display = show ? '' : 'none';
+          if (show) visible++;
+        });
+        if (empty) empty.classList.toggle('hidden', visible !== 0);
+      });
+    });
+  })();
+</script>
+</body>
+</html>
