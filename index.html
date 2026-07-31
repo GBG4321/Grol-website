@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9TG3KL4B4D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9TG3KL4B4D');
+</script>
+<!-- PostHog analytics -->
+<script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="Fi Di init Ji Xi Tr Ki tn Zi capture calculateEventProperties ln register register_once register_for_session unregister unregister_for_session dn getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync cn identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty un sn createPersonProfile setInternalOrTestUser hn Wi pn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing rn debug Er it getPageViewId captureTraceFeedback captureTraceMetric Ui".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_z6Q9j8Q2nPj9btdp6HwaHJoxed2EizKPRyszmRAdAkZ3', {
+        api_host: 'https://eu.i.posthog.com',
+        defaults: '2026-05-30',
+        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+    })
+</script>
+<title>Grol Media</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://grolmedia.com/#organization",
+  "name": "Grol Media",
+  "url": "https://grolmedia.com/",
+  "logo": "https://grolmedia.com/assets/grol_logo.png",
+  "description": "SaaS marketing agency - Meta Ads, lifecycle email flows and product-level growth advice for SaaS companies.",
+  "areaServed": "Worldwide",
+  "foundingLocation": "Bulgaria",
+  "founder": {
+    "@type": "Person",
+    "name": "Georgi Georgiev",
+    "jobTitle": "Founder",
+    "url": "https://www.linkedin.com/in/georgi-georgiev-852a00370/"
+  },
+  "sameAs": ["https://www.linkedin.com/in/georgi-georgiev-852a00370/"]
+}
+</script>
+<meta name="description" content="Grol Media is a performance marketing agency for B2B SaaS - Meta ads, lifecycle email flows, and product-level advice engineered to lower CAC and grow revenue." />
+
+<link rel="icon" type="image/png" href="assets/grol_logo.png" />
+<link rel="apple-touch-icon" href="assets/grol_logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  // Lock viewport height to actual visible pixels — fixes Instagram/TikTok/Facebook
+  // in-app browsers that lie about 100vh / 100svh on initial load.
+  (function () {
+    var setVh = function () {
+      document.documentElement.style.setProperty('--app-vh', window.innerHeight + 'px');
+      // Some in-app browsers (Instagram/TikTok/Facebook) briefly report a
+      // desktop-sized layout viewport before correcting to the real mobile
+      // width a moment after load. Anything keyed off the `md:` breakpoint
+      // reads that stale width and applies desktop-only layout (like the
+      // negative margin that intentionally overlaps Hero and Services on
+      // real desktops), producing a text pile-up on phones. Mirror the same
+      // measure to a CSS var, defaulting to "not desktop" until confirmed.
+      document.documentElement.style.setProperty('--app-desktop', window.innerWidth >= 768 ? '1' : '0');
+    };
+    setVh();
+    window.addEventListener('resize', setVh);
+    window.addEventListener('orientationchange', setVh);
+    // Re-measure once after first paint settles — catches in-app browsers
+    // that finish their toolbar layout slightly after load.
+    window.addEventListener('load', function () {
+      setTimeout(setVh, 50);
+      setTimeout(setVh, 250);
+      setTimeout(setVh, 600);
+    });
+  })();
+</script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          serif: ['"Instrument Serif"', 'ui-serif', 'Georgia', 'serif'],
+        },
+        colors: {
+          background: 'hsl(0 0% 0%)',
+          foreground: 'hsl(0 0% 100%)',
+          'muted-foreground': 'hsl(0 0% 65%)',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --muted-foreground: 0 0% 65%;
+    --hero-subtitle: 210 17% 95%;
+  }
+
+  html { scroll-behavior: smooth; }
+  html, body { min-height: 100%; }
+  body {
+    margin: 0;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .text-muted-foreground { color: hsl(var(--muted-foreground)); }
+  .bg-foreground { background-color: hsl(var(--foreground)); }
+  .text-background { color: hsl(var(--background)); }
+
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.01);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  .liquid-glass::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(255, 255, 255, 0.15) 20%,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0.15) 80%,
+      rgba(255, 255, 255, 0.45) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .nav-divider { box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.06); }
+
+  /* Nav dropdown */
+  .nav-item { position: relative; }
+  .nav-dd { position: absolute; left: 50%; top: 100%; padding-top: 16px; transform: translateX(-50%) translateY(6px); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.22,1,0.36,1); z-index: 60; }
+  .nav-item:hover .nav-dd, .nav-item:focus-within .nav-dd { opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+  .nav-dd-panel { width: 340px; border-radius: 16px; padding: 8px; background: rgba(12,12,12,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 24px 60px -20px rgba(0,0,0,0.8); }
+  .nav-dd-item { display: flex; align-items: flex-start; gap: 12px; padding: 11px 12px; border-radius: 11px; transition: background 0.18s ease; text-decoration: none; color: #fff; }
+  .nav-dd-item:hover { background: rgba(255,255,255,0.06); }
+  .nav-dd-num { font-family: 'Instrument Serif', ui-serif, Georgia, serif; font-style: italic; font-size: 18px; line-height: 1; color: rgba(255,255,255,0.5); padding-top: 2px; flex: none; width: 22px; }
+  .nav-dd-title { font-size: 14px; font-weight: 500; line-height: 1.2; display: block; }
+  .nav-dd-sub { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 2px; line-height: 1.3; display: block; }
+
+  /* Learn more link */
+  .learn-link { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 500; color: #fff; text-decoration: none; width: fit-content; }
+  .learn-link .lm-arrow { transition: transform 0.24s cubic-bezier(0.22,1,0.36,1); }
+  .learn-link:hover .lm-arrow { transform: translateX(4px); }
+  .learn-link .lm-underline { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-position: 0 100%; background-repeat: no-repeat; padding-bottom: 2px; transition: background-size 0.28s cubic-bezier(0.22,1,0.36,1); }
+  .learn-link:hover .lm-underline { background-size: 100% 1px; }
+
+  /* Rotating shiny border light */
+  @property --pill-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  .pill-glow { position: relative; }
+  .pill-glow::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.4px;
+    background: conic-gradient(
+      from var(--pill-angle),
+      rgba(255,255,255,0) 0deg,
+      rgba(255,255,255,0) 270deg,
+      rgba(255,255,255,0.85) 335deg,
+      rgba(255,255,255,1) 350deg,
+      rgba(255,255,255,0.85) 360deg
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+    filter: drop-shadow(0 0 4px rgba(255,255,255,0.45));
+    animation: pillGlowSpin 6.5s linear infinite;
+  }
+  @keyframes pillGlowSpin {
+    to { --pill-angle: 360deg; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pill-glow::after { animation: none; }
+  }
+
+  /* Founder frame hover tilt */
+  .tilt-hover {
+    transform: perspective(900px) rotateX(0deg) rotateY(0deg);
+    transition: transform 600ms cubic-bezier(0.22,1,0.36,1), box-shadow 600ms cubic-bezier(0.22,1,0.36,1);
+    will-change: transform;
+  }
+  .tilt-hover:hover {
+    transform: perspective(900px) rotateX(4deg) rotateY(-7deg) scale(1.015);
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tilt-hover, .tilt-hover:hover { transform: none; }
+  }
+
+  /* Strikethrough → reveal on "honest" */
+  .strike-word {
+    position: relative;
+    display: inline-block;
+    color: rgba(255,255,255,0.55);
+    opacity: 0;
+    font-weight: inherit;
+    margin-right: 0.18em;
+  }
+  .reveal.is-in .strike-word {
+    animation: strikeWordIn 0.5s cubic-bezier(0.22,1,0.36,1) 0.25s forwards;
+  }
+  .strike-word::after {
+    content: '';
+    position: absolute;
+    top: 56%;
+    left: -3%;
+    width: 0;
+    height: 2px;
+    background: rgba(255,255,255,0.75);
+    border-radius: 2px;
+    transform: rotate(-2deg);
+    transform-origin: 0 50%;
+  }
+  .reveal.is-in .strike-word::after {
+    animation: strikeDraw 0.45s cubic-bezier(0.65,0,0.35,1) 0.85s forwards;
+  }
+  .honest-word {
+    display: inline-block;
+    opacity: 0;
+  }
+  .reveal.is-in .honest-word {
+    animation: honestIn 0.7s cubic-bezier(0.22,1,0.36,1) 1.4s forwards;
+  }
+  @keyframes strikeWordIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes strikeDraw {
+    to { width: 106%; }
+  }
+  @keyframes honestIn {
+    from { opacity: 0; transform: translateY(8px); filter: blur(4px); }
+    to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal.is-in .strike-word,
+    .reveal.is-in .strike-word::after,
+    .reveal.is-in .honest-word {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+    .reveal.is-in .strike-word::after { width: 106%; }
+  }
+
+  /* Entrance animations */
+  @keyframes fadeUpSm {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  .anim-pill     { opacity: 0; animation: fadeUpSm 0.5s cubic-bezier(0.22,1,0.36,1) 0s    forwards; }
+  .anim-title    { opacity: 0; animation: fadeUp   0.6s cubic-bezier(0.22,1,0.36,1) 0.1s  forwards; }
+  .anim-subtitle { opacity: 0; animation: fadeUp   0.6s cubic-bezier(0.22,1,0.36,1) 0.2s  forwards; }
+  .anim-cta      { opacity: 0; animation: fadeUp   0.6s cubic-bezier(0.22,1,0.36,1) 0.3s  forwards; }
+  .anim-meta     { opacity: 0; animation: fadeIn   0.8s cubic-bezier(0.22,1,0.36,1) 0.7s  forwards; }
+
+  /* Hover spring-feel */
+  .btn-press { transition: transform 220ms cubic-bezier(0.22,1,0.36,1); }
+  .btn-press:hover  { transform: scale(1.03); }
+  .btn-press:active { transform: scale(0.98); }
+
+  /* Morphing letter — "l" ⇄ "w" */
+  .morph-letter {
+    display: inline-grid;
+    vertical-align: baseline;
+    line-height: inherit;
+    justify-items: start;
+  }
+  .morph-letter > span {
+    grid-area: 1 / 1;
+    will-change: opacity, transform, filter;
+    display: inline-block;
+    transform-origin: 50% 100%;
+  }
+  .morph-letter > .ml-l {
+    animation: morph-l 5.5s ease-in-out infinite;
+  }
+  .morph-letter > .ml-w {
+    animation: morph-w 5.5s ease-in-out infinite;
+  }
+  @keyframes morph-l {
+    0%, 30%, 100% { opacity: 0; transform: scale(0.92); filter: blur(0.4px); }
+    50%, 80%      { opacity: 1; transform: scale(1); filter: blur(0); }
+  }
+  @keyframes morph-w {
+    0%, 30%, 100% { opacity: 1; transform: scale(1); filter: blur(0); }
+    50%, 80%      { opacity: 0; transform: scale(0.92); filter: blur(0.4px); }
+  }
+
+  /* Services section */
+  .svc-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.01) 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: border-color 280ms cubic-bezier(0.22,1,0.36,1),
+                background 280ms cubic-bezier(0.22,1,0.36,1),
+                transform 280ms cubic-bezier(0.22,1,0.36,1);
+  }
+  .svc-card:hover {
+    border-color: rgba(255,255,255,0.22);
+    background: linear-gradient(180deg, rgba(255,255,255,0.045) 0%, rgba(255,255,255,0.015) 100%);
+    transform: translateY(-2px);
+  }
+  .svc-num {
+    font-family: 'Instrument Serif', ui-serif, Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: -0.02em;
+  }
+  .svc-divider { height: 1px; background: rgba(255,255,255,0.08); }
+  .svc-bullet  { width: 4px; height: 4px; border-radius: 9999px; background: rgba(255,255,255,0.45); flex: none; }
+
+  /* Comparison table */
+  .cmp-wrap { border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; overflow: hidden; background: linear-gradient(180deg, rgba(255,255,255,0.022), rgba(255,255,255,0.006)); }
+  .cmp-grid { grid-template-columns: 1fr; }
+  .cmp-row { border-top: 1px solid rgba(255,255,255,0.07); }
+  .cmp-h { padding: 16px 22px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55); display: flex; align-items: center; gap: 9px; font-weight: 500; }
+  .cmp-h--grol { color: #fff; font-weight: 600; }
+  .cmp-h--other { color: rgba(255,255,255,0.5); }
+  .cmp-col-grol { background: rgba(255,255,255,0.04); box-shadow: inset 1px 0 0 rgba(255,255,255,0.07), inset -1px 0 0 rgba(255,255,255,0.07); }
+  .cmp-label { padding: 18px 22px 6px; font-weight: 600; font-size: 12.5px; letter-spacing: 0.06em; color: rgba(255,255,255,0.9); text-transform: uppercase; }
+  .cmp-cell { padding: 12px 22px 18px; font-size: 14.5px; line-height: 1.5; display: flex; flex-direction: column; }
+  .cmp-cell--grol { color: rgba(255,255,255,0.9); }
+  .cmp-cell--other { color: rgba(255,255,255,0.5); }
+  .cmp-pt { display: flex; gap: 11px; align-items: flex-start; }
+  .cmp-ico { flex: none; margin-top: 2px; }
+  .cmp-cell--grol .cmp-ico { color: #fff; }
+  .cmp-cell--other .cmp-ico { color: rgba(255,255,255,0.35); }
+  .cmp-mini { font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.42); margin-bottom: 9px; }
+  @media (min-width: 768px) {
+    .cmp-grid { grid-template-columns: 1.05fr 1.45fr 1.35fr; }
+    .cmp-label { padding: 22px; font-size: 15px; font-weight: 500; letter-spacing: -0.2px; color: #fff; text-transform: none; display: flex; align-items: center; }
+    .cmp-cell { padding: 22px; }
+  }
+
+  /* Pricing */
+  .price-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.008) 100%);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 22px;
+    transition: border-color 280ms cubic-bezier(0.22,1,0.36,1), transform 280ms cubic-bezier(0.22,1,0.36,1), box-shadow 280ms cubic-bezier(0.22,1,0.36,1);
+  }
+  .price-card:hover { border-color: rgba(255,255,255,0.2); transform: translateY(-3px); }
+  .price-card--featured {
+    border-color: rgba(255,255,255,0.55);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.25), 0 30px 70px -32px rgba(255,255,255,0.22);
+    background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.012) 100%);
+  }
+  .price-card--featured:hover { border-color: rgba(255,255,255,0.7); }
+  .price-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #000; background: #fff; padding: 5px 11px; border-radius: 9999px;
+  }
+  .price-kicker { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+  .price-amount { font-size: 2.75rem; font-weight: 500; letter-spacing: -1.5px; line-height: 1; }
+  .price-unit { font-size: 13.5px; color: rgba(255,255,255,0.55); }
+  .price-divider { height: 1px; background: rgba(255,255,255,0.09); }
+  .price-inherit { font-size: 12.5px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-weight: 500; }
+  .price-li { display: flex; gap: 11px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.85); }
+  .price-li .pl-ico { flex: none; margin-top: 2px; color: #fff; }
+  .price-note {
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.03);
+    border-radius: 14px; padding: 16px 16px;
+    font-size: 13px; line-height: 1.55; color: rgba(255,255,255,0.72);
+  }
+  .price-note b { color: #fff; font-weight: 600; }
+  .price-btn {
+    width: 100%; text-align: center; border-radius: 9999px; padding: 13px 20px;
+    font-size: 15px; font-weight: 500; transition: transform 220ms cubic-bezier(0.22,1,0.36,1), background 200ms, border-color 200ms;
+    display: inline-flex; align-items: center; justify-content: center; cursor: pointer;
+  }
+  .price-btn:active { transform: scale(0.98); }
+  .price-btn--solid { background: #fff; color: #000; border: 1px solid #fff; }
+  .price-btn--solid:hover { transform: scale(1.02); }
+  .price-btn--ghost { background: transparent; color: rgba(255,255,255,0.9); border: 1px solid rgba(255,255,255,0.18); }
+  .price-btn--ghost:hover { border-color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.05); }
+
+  /* Testimonials slider */
+  .testi-mark { font-family: 'Instrument Serif', ui-serif, Georgia, serif; font-style: italic; line-height: 0.8; color: rgba(255,255,255,0.16); }
+  .testi-anim { animation: testiIn 0.55s cubic-bezier(0.22,1,0.36,1); }
+  @keyframes testiIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  .testi-arrow {
+    width: 44px; height: 44px; border-radius: 9999px; flex: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255,255,255,0.16); color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.02); cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  }
+  .testi-arrow:hover { border-color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.06); }
+  .testi-arrow:active { transform: scale(0.94); }
+  .testi-dot { width: 7px; height: 7px; border-radius: 9999px; background: rgba(255,255,255,0.25); cursor: pointer; transition: background 0.25s ease, width 0.25s ease; padding: 0; border: none; }
+  .testi-dot--on { width: 22px; background: rgba(255,255,255,0.9); }
+  .testi-avatar {
+    width: 44px; height: 44px; border-radius: 9999px; flex: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.04);
+    font-family: 'Instrument Serif', ui-serif, Georgia, serif; font-style: italic; font-size: 20px; color: #fff;
+  }
+
+  /* Stagger reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 700ms cubic-bezier(0.22,1,0.36,1), transform 700ms cubic-bezier(0.22,1,0.36,1); }
+  .reveal.is-in { opacity: 1; transform: translateY(0); }
+
+  /* Hide the app until React has mounted and layout has settled - prevents
+     unstyled/unlaid-out content (hero stacked on top of the next section)
+     from flashing on slow first loads, e.g. in-app browsers on Instagram. */
+  #root { opacity: 0; }
+  #root.app-ready { opacity: 1; transition: opacity 220ms ease; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="env,react">
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ParticleField() {
+  const canvasRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let raf;
+    let particles = [];
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+
+    const resize = () => {
+      const { innerWidth: w, innerHeight: h } = window;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      canvas.style.width = w + 'px';
+      canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+
+    const seed = () => {
+      const { innerWidth: w, innerHeight: h } = window;
+      const count = w < 640 ? 60 : 100;
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: 0.6 + Math.random() * 1.4,
+        vx: (Math.random() - 0.5) * 0.85,
+        vy: (Math.random() - 0.5) * 0.85,
+        a: 0.3 + Math.random() * 0.4
+      }));
+    };
+
+    const tick = () => {
+      const { innerWidth: w, innerHeight: h } = window;
+      ctx.clearRect(0, 0, w, h);
+      for (const p of particles) {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < -5) p.x = w + 5;
+        if (p.x > w + 5) p.x = -5;
+        if (p.y < -5) p.y = h + 5;
+        if (p.y > h + 5) p.y = -5;
+        ctx.beginPath();
+        ctx.fillStyle = 'rgba(255,255,255,' + (p.a * 0.55) + ')';
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      raf = requestAnimationFrame(tick);
+    };
+
+    resize();
+    seed();
+    tick();
+
+    const onResize = () => { resize(); };
+    window.addEventListener('resize', onResize);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 z-0 block w-full h-full pointer-events-none"
+      aria-hidden="true" />);
+
+
+}
+
+function Nav() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const closeMenu = () => setMenuOpen(false);
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 nav-divider bg-black/60 backdrop-blur-md supports-[backdrop-filter]:bg-black/40">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 h-16 md:h-20 flex md:grid md:grid-cols-3 items-center justify-between">
+        <div className="flex items-center gap-2 md:justify-self-start">
+          <img
+            src="assets/grol_logo_v2.png"
+            alt="Grol Media"
+            className="w-9 h-9 md:w-12 md:h-12 object-contain block" />
+          
+          <span className="text-[14px] md:text-[15px] font-medium tracking-tight leading-none">Grol Media</span>
+        </div>
+
+        <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground md:justify-self-center">
+          <div className="nav-item">
+            <a href="#services" className="hover:text-white transition-colors inline-flex items-center gap-1.5 cursor-pointer">
+              Services
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true" style={{ marginTop: '1px' }}>
+                <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+            <div className="nav-dd">
+              <div className="nav-dd-panel">
+                <a className="nav-dd-item" href="meta-ads-for-saas/">
+                  <span>
+                    <span className="nav-dd-title">Meta Ads built for SaaS</span>
+                    <span className="nav-dd-sub">Full-funnel paid acquisition</span>
+                  </span>
+                </a>
+                <a className="nav-dd-item" href="email-flows/">
+                  <span>
+                    <span className="nav-dd-title">Email flows that compound</span>
+                    <span className="nav-dd-sub">Lifecycle &amp; retention systems</span>
+                  </span>
+                </a>
+                <a className="nav-dd-item" href="product-advice/">
+                  <span>
+                    <span className="nav-dd-title">Product-level advice</span>
+                    <span className="nav-dd-sub">Insights &amp; optimization</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+          <a href="blog/" className="hover:text-white transition-colors">Blog</a>
+        </div>
+
+        <div className="flex items-center gap-2.5 md:justify-self-end">
+          <a
+            href="https://calendly.com/grolmedia-agency/30min"
+            onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('open-calendly')); }}
+            rel="noopener noreferrer"
+            className="text-xs md:text-sm font-medium px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-white/15 hover:border-white/40 hover:bg-white/5 transition-colors whitespace-nowrap cursor-pointer">
+            
+            <span className="hidden sm:inline">Get a Marketing Plan</span>
+            <span className="sm:hidden">Get a Plan</span>
+          </a>
+          <button
+            type="button"
+            onClick={() => setMenuOpen((o) => !o)}
+            aria-label="Menu"
+            aria-expanded={menuOpen}
+            className="md:hidden inline-flex flex-col justify-center items-center w-9 h-9 rounded-full border border-white/15 hover:border-white/40 transition-colors gap-[5px] cursor-pointer">
+            <span className={`block w-4 h-[1.5px] bg-white transition-transform duration-300 ${menuOpen ? 'translate-y-[3.25px] rotate-45' : ''}`}></span>
+            <span className={`block w-4 h-[1.5px] bg-white transition-transform duration-300 ${menuOpen ? '-translate-y-[3.25px] -rotate-45' : ''}`}></span>
+          </button>
+        </div>
+      </div>
+
+      <div className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-out border-t border-white/10 ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 border-t-0'}`}>
+        <div className="bg-black/95 backdrop-blur-md px-4 py-4 flex flex-col gap-1">
+          <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground px-2 mb-1">Services</span>
+          <a className="block px-2 py-2.5 text-[15px] text-white/85 hover:text-white rounded-lg hover:bg-white/5 transition-colors" href="meta-ads-for-saas/" onClick={closeMenu}>Meta Ads built for SaaS</a>
+          <a className="block px-2 py-2.5 text-[15px] text-white/85 hover:text-white rounded-lg hover:bg-white/5 transition-colors" href="email-flows/" onClick={closeMenu}>Email flows that compound</a>
+          <a className="block px-2 py-2.5 text-[15px] text-white/85 hover:text-white rounded-lg hover:bg-white/5 transition-colors" href="product-advice/" onClick={closeMenu}>Product-level advice</a>
+          <div className="h-px bg-white/8 my-1.5 mx-2"></div>
+          <a className="block px-2 py-2.5 text-[15px] text-white/85 hover:text-white rounded-lg hover:bg-white/5 transition-colors" href="#pricing" onClick={closeMenu}>Pricing</a>
+          <a className="block px-2 py-2.5 text-[15px] text-white/85 hover:text-white rounded-lg hover:bg-white/5 transition-colors" href="blog/" onClick={closeMenu}>Blog</a>
+        </div>
+      </div>
+    </nav>);
+
+}
+
+function Hero() {
+  return (
+    <section className="relative w-full overflow-hidden bg-black md:h-[var(--app-vh,100vh)] md:min-h-[var(--app-vh,100vh)]">
+      <ParticleField />
+
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          background:
+          'radial-gradient(ellipse at 50% 40%, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0) 55%)'
+        }} />
+      
+
+      <div className="relative z-10 mt-16 md:mt-20 px-4 sm:px-6 flex flex-col items-center text-center md:h-[calc(100%-5rem)] justify-start pt-[6vh] md:pt-[10vh] pb-12 md:pb-0">
+        <div className="liquid-glass pill-glow anim-pill inline-flex items-center gap-1.5 md:gap-2 px-2 md:px-3 py-1 md:py-2 rounded-lg -mt-5 sm:mt-0 mb-9 sm:mb-4 md:mb-6 max-w-[94vw]">
+          <span className="bg-white text-black rounded-md text-[10px] md:text-sm font-medium px-1.5 md:px-2 py-0.5 whitespace-nowrap">Top</span>
+          <span className="text-[11px] md:text-sm font-medium text-muted-foreground leading-tight">
+            Results-Only Pricing for Month One
+          </span>
+        </div>
+
+        <h1
+          className="anim-title text-[2.64rem] sm:text-5xl md:text-7xl font-medium leading-[1.04] md:leading-[1.15] mb-3 max-w-[94vw]"
+          style={{ letterSpacing: '-0.6px' }}>
+          
+          <span style={{ fontFamily: "Inter" }}>
+            We don't   <span className="font-serif italic font-normal">"run ads"</span>
+            <br />
+            Watch us Gro<span className="morph-letter"><span className="ml-l">l</span><span className="ml-w">w</span></span><br className="sm:hidden" /> your <span className="font-serif italic font-normal">Saas</span>
+          </span>
+        </h1>
+
+        <p
+          className="anim-subtitle text-[14px] sm:text-lg font-normal leading-[1.45] sm:leading-6 opacity-90 mt-3 sm:mt-0 mb-7 md:mb-8 max-w-2xl px-2"
+          style={{ color: 'hsl(var(--hero-subtitle))' }}>
+          
+          <span>
+            <span className="sm:hidden">
+              Helping SaaS companies acquire, retain, and grow
+              <br />
+              through Meta Ads, Email Flows and product strategy.
+            </span>
+            <span className="hidden sm:inline">
+              Helping SaaS companies acquire, retain, and grow through Meta Ads,
+              <br className="hidden sm:block" />
+              custom Email Flows, and product-level insights that
+              <br className="hidden sm:block" />
+              drive down CAC and push LTV higher.
+            </span>
+            
+          </span>
+        </p>
+
+        <div className="anim-cta flex flex-col sm:flex-row items-center gap-4 sm:gap-3 w-full sm:w-auto px-2 sm:px-0">
+          <a
+            href="https://calendly.com/grolmedia-agency/30min"
+            onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('open-calendly')); }}
+            rel="noopener noreferrer"
+            className="btn-press bg-foreground text-background rounded-full px-7 py-3 sm:px-8 sm:py-3.5 text-[15px] sm:text-base font-medium inline-flex items-center justify-center w-56 sm:w-auto cursor-pointer">
+            
+            Get a Marketing Plan
+          </a>
+          <a
+            href="#services"
+            className="btn-press text-white/85 hover:text-white rounded-full px-7 py-3 sm:px-5 sm:py-3.5 text-[15px] sm:text-base font-medium inline-flex items-center justify-center gap-2 w-56 sm:w-auto border border-white/15 hover:border-white/40 hover:bg-white/5 transition-colors">
+            
+            <span>Our Services</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path
+                d="M3 7h8M8 4l3 3-3 3"
+                stroke="currentColor"
+                strokeWidth="1.4"
+                strokeLinecap="round"
+                strokeLinejoin="round">
+              </path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </section>);
+
+}
+
+function ParticleFieldLocal({ density = 60, opacity = [0.2, 0.5] }) {
+  const canvasRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const parent = canvas.parentElement;
+    const ctx = canvas.getContext('2d');
+    let raf;
+    let particles = [];
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+
+    const size = () => {
+      const r = parent.getBoundingClientRect();
+      return { w: Math.max(1, r.width), h: Math.max(1, r.height) };
+    };
+
+    const resize = () => {
+      const { w, h } = size();
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      canvas.style.width = w + 'px';
+      canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+
+    const seed = () => {
+      const { w, h } = size();
+      const count = w < 640 ? Math.round(density * 0.6) : density;
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: 0.6 + Math.random() * 1.4,
+        vx: (Math.random() - 0.5) * 0.75,
+        vy: (Math.random() - 0.5) * 0.75,
+        a: opacity[0] + Math.random() * (opacity[1] - opacity[0])
+      }));
+    };
+
+    const tick = () => {
+      const { w, h } = size();
+      ctx.clearRect(0, 0, w, h);
+      for (const p of particles) {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < -5) p.x = w + 5;
+        if (p.x > w + 5) p.x = -5;
+        if (p.y < -5) p.y = h + 5;
+        if (p.y > h + 5) p.y = -5;
+        ctx.beginPath();
+        ctx.fillStyle = 'rgba(255,255,255,' + (p.a * 0.55) + ')';
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      raf = requestAnimationFrame(tick);
+    };
+
+    resize();
+    seed();
+    tick();
+
+    const ro = new ResizeObserver(() => { resize(); });
+    ro.observe(parent);
+    return () => {
+      cancelAnimationFrame(raf);
+      ro.disconnect();
+    };
+  }, [density]);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 z-0 block w-full h-full pointer-events-none"
+      aria-hidden="true" />);
+
+}
+
+function Services() {
+  const rootRef = React.useRef(null);
+  React.useEffect(() => {
+    const els = rootRef.current?.querySelectorAll('.reveal') || [];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  const services = [
+    {
+      n: '01',
+      kicker: 'Paid Acquisition',
+      title: <>Meta Ads built for <span className="font-serif italic font-normal">SaaS</span></>,
+      titleText: 'Meta Ads built for SaaS',
+      desc: 'Full-funnel ads built on expertise and deep understanding of the current market.',
+      points: ['Positioning Aligned with Your Goals', 'Landing page building', 'Full creative production', 'Full media buying', 'Full tracking coverage'],
+      link: 'meta-ads-for-saas/'
+    },
+    {
+      n: '02',
+      kicker: 'Lifecycle & Retention',
+      title: <>Email flows that <span className="font-serif italic font-normal">compound</span></>,
+      titleText: 'Email flows that compound',
+      desc: 'Custom lifecycle journeys that turn signups into power users and power users into expansion revenue.',
+      points: ['Onboarding & activation flows', 'Re-engagement & winback', 'Pricing & expansion triggers', 'Weekly Newsletter'],
+      link: 'email-flows/'
+    },
+    {
+      n: '03',
+      kicker: 'Insights & Optimization',
+      title: <>Product-level <span className="font-serif italic font-normal">advice</span></>,
+      titleText: 'Product-level advice',
+      desc: 'Looking closely at how the ads are performing, we will give you valuable advice on how to shape the product and the positioning to make more.',
+      points: ['Funnel & cohort analytics', 'A/B testing infrastructure', 'Higher LTV and Lower Churn Rate', 'Trial-to-Paid ratio lift (CRO)'],
+      link: 'product-advice/'
+    }
+  ];
+
+  return (
+    <section id="services" ref={rootRef} className="relative w-full bg-black border-t border-white/5 overflow-hidden" style={{ marginTop: 'calc(var(--app-desktop, 0) * -14rem)' }}>
+      <ParticleFieldLocal density={70} opacity={[0.18, 0.5]} />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pt-2 md:pt-4 pb-24 md:pb-32">
+        <div className="reveal flex flex-col items-center text-center mb-6 sm:mb-12 md:mb-16">
+          <h2
+            className="text-[2rem] sm:text-4xl md:text-6xl font-medium leading-[1.05] md:leading-[1.1] max-w-3xl"
+            style={{ letterSpacing: '-1px' }}>
+            
+            What we <span className="font-serif italic font-normal">actually</span> do
+            <br />
+            for SaaS teams
+          </h2>
+          <p
+            className="mt-5 md:mt-6 text-[15px] sm:text-base font-normal leading-[1.55] opacity-80 max-w-xl"
+            style={{ color: 'hsl(var(--hero-subtitle))' }}>
+            
+            Three focused engines, wired into your funnel and measured against revenue.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+          {services.map((s, i) => (
+            <article
+              key={s.n}
+              className="reveal svc-card rounded-2xl p-6 md:p-7 flex flex-col"
+              style={{ transitionDelay: `${i * 90}ms` }}>
+              
+              <div className="flex items-center justify-between mb-8 md:mb-10">
+                <span className="svc-num text-2xl md:text-3xl">{s.n}</span>
+                <span className="text-[11px] md:text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                  {s.kicker}
+                </span>
+              </div>
+
+              <h3
+                className="text-[1.5rem] md:text-[1.75rem] font-medium leading-[1.15] mb-3"
+                style={{ letterSpacing: '-0.5px' }}>
+                
+                {s.title}
+              </h3>
+
+              <p
+                className="text-[14px] md:text-[15px] leading-[1.55] opacity-80 mb-6"
+                style={{ color: 'hsl(var(--hero-subtitle))' }}>
+                
+                {s.desc}
+              </p>
+
+              <div className="svc-divider mb-5"></div>
+
+              <ul className="flex flex-col gap-2.5 mb-2">
+                {s.points.map((p) => (
+                  <li key={p} className="flex items-center gap-3 text-[13.5px] md:text-sm text-muted-foreground">
+                    <span className="svc-bullet"></span>
+                    <span>{p}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <a href={s.link} className="learn-link mt-auto pt-6" aria-label={`Learn more about ${s.titleText}`}>
+                <span className="lm-underline">Learn more</span>
+                <svg className="lm-arrow" width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>);
+
+}
+
+function Mission() {
+  const rootRef = React.useRef(null);
+  React.useEffect(() => {
+    const els = rootRef.current?.querySelectorAll('.reveal') || [];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  const comparison = [
+    {
+      label: 'Understanding your product',
+      grol: 'We dig into your product, your customers and your goals before a single ad goes live.',
+      other: 'Apply a generic playbook without ever really learning what you sell.'
+    },
+    {
+      label: 'SaaS economics',
+      grol: 'We work to the numbers that actually run the business - CAC, LTV and churn.',
+      other: 'Chase clicks and impressions that rarely tie back to real revenue.'
+    },
+    {
+      label: 'Positioning',
+      grol: 'We help sharpen how you’re positioned, so the funnel converts and not just fills.',
+      other: 'Send traffic to whatever messaging you happened to walk in with.'
+    },
+    {
+      label: 'How we work with you',
+      grol: 'We plug in like your in-house growth team - close to the work, every day.',
+      other: 'Drop a report once a month and go quiet in between.'
+    },
+    {
+      label: 'Transparency',
+      grol: 'We’re completely open - if something is working we tell you, and if it isn’t you hear it just as fast. We’ve got a “we’ll figure it out” mindset.',
+      other: 'Dress up the numbers and quietly bury whatever isn’t working.'
+    },
+    {
+      label: 'Pricing & risk',
+      grol: 'We start on a results-based model, so you see proof before committing further.',
+      other: 'Lock you into a retainer that’s billed whether it performs or not.'
+    }
+  ];
+
+  return (
+    <section id="mission" ref={rootRef} className="relative w-full bg-black overflow-hidden -mt-10 md:-mt-16">
+      <ParticleFieldLocal density={55} opacity={[0.14, 0.42]} />
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          background:
+          'radial-gradient(ellipse at 75% 30%, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 55%)'
+        }}>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pt-2 md:pt-4 pb-24 md:pb-32">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
+          <div className="reveal md:col-span-5 order-2 md:order-1">
+            <div className="relative">
+              <div
+                className="absolute -inset-6 md:-inset-8 rounded-[2rem] pointer-events-none"
+                style={{
+                  background:
+                  'radial-gradient(ellipse at 50% 35%, rgba(255,255,255,0.08) 0%, rgba(0,0,0,0) 65%)'
+                }}>
+              </div>
+              <div className="liquid-glass tilt-hover relative rounded-[1.4rem] p-2 md:p-2.5">
+                <div className="rounded-[1.05rem] overflow-hidden bg-white/[0.03]">
+                  <img
+                    src="assets/founder_georgi.png"
+                    alt="Georgi Georgiev, Founder of Grol Media"
+                    className="block w-full aspect-square object-cover" />
+                </div>
+                <div className="absolute left-4 md:left-5 bottom-4 md:bottom-5 right-4 md:right-5 flex items-end justify-between gap-3">
+                  <a
+                    href="https://www.linkedin.com/in/georgi-georgiev-852a00370/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Georgi Georgiev on LinkedIn"
+                    className="liquid-glass rounded-lg px-2.5 py-1.5 backdrop-blur-md flex items-center gap-2.5 hover:bg-white/10 transition-colors group/founder">
+                    <div>
+                      <div className="text-[13px] md:text-sm font-medium leading-none">Georgi Georgiev</div>
+                      <div className="text-[11px] md:text-[12px] text-muted-foreground mt-1 leading-none">Founder</div>
+                    </div>
+                    <svg className="w-4 h-4 text-white/70 group-hover/founder:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <blockquote className="md:hidden border-l border-white/15 pl-5 max-w-xl mx-auto text-left mt-8">
+              <p className="text-[16px] leading-[1.55] font-normal text-white/90">
+                "If a campaign can't be tied to revenue, it shouldn't be running. <span className="font-serif italic font-normal">Period.</span>"
+              </p>
+              <footer className="mt-3 text-[12px] uppercase tracking-[0.16em] text-muted-foreground">
+                Georgi Georgiev — Founder
+              </footer>
+            </blockquote>
+          </div>
+
+          <div className="reveal md:col-span-7 order-1 md:order-2 text-center md:text-left">
+            <h2
+              className="text-[2rem] sm:text-4xl md:text-[3.5rem] font-medium leading-[1.1] md:leading-[1.15] mb-6 md:mb-7 max-w-[20ch] mx-auto md:mx-0"
+              style={{ letterSpacing: '-0.6px' }}>
+              
+              We exist to make growth
+              <br />
+              <span className="strike-word">loud</span><span className="font-serif italic font-normal honest-word">honest</span> again
+            </h2>
+
+            <p
+              className="text-[15px] md:text-[17px] leading-[1.6] opacity-90 mb-5 max-w-xl mx-auto md:mx-0"
+              style={{ color: 'hsl(var(--hero-subtitle))' }}>
+              
+              Most SaaS agencies hide behind dashboards designed to make themselves look good - not to make you money. We built Grol Media, a SaaS marketing agency based in Bulgaria led by founder Georgi Georgiev, to flip that. Less vanity metrics. More revenue you can actually feel.
+            </p>
+
+            <p
+              className="text-[15px] md:text-[17px] leading-[1.6] opacity-80 mb-8 max-w-xl mx-auto md:mx-0"
+              style={{ color: 'hsl(var(--hero-subtitle))' }}>
+              
+              Our mission is simple: build growth systems for SaaS founders that compound month over month, with pricing that only wins when you do.
+            </p>
+
+            <blockquote className="hidden md:block border-l border-white/15 pl-5 max-w-xl mx-auto md:mx-0 text-left">
+              <p className="text-[16px] md:text-lg leading-[1.55] font-normal text-white/90">
+                "If a campaign can't be tied to revenue, it shouldn't be running. <span className="font-serif italic font-normal">Period.</span>"
+              </p>
+              <footer className="mt-3 text-[12px] md:text-[13px] uppercase tracking-[0.16em] text-muted-foreground">
+                Georgi Georgiev — Founder
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div className="reveal mt-20 md:mt-28">
+          <div className="text-center mb-10 md:mb-14 max-w-2xl mx-auto">
+            <span className="block text-[11px] md:text-xs uppercase tracking-[0.18em] text-muted-foreground mb-3">The difference</span>
+            <h3 className="text-[1.75rem] sm:text-4xl md:text-[2.75rem] font-medium leading-[1.3] sm:leading-[1.3] md:leading-[1.3]" style={{ letterSpacing: '-0.6px' }}>
+              Why founders pick us over a <span className="font-serif italic font-normal">typical</span> agency
+            </h3>
+          </div>
+
+          <div className="cmp-wrap">
+            <div className="hidden md:grid cmp-grid">
+              <div className="cmp-h"></div>
+              <div className="cmp-h cmp-h--grol cmp-col-grol">
+                <img src="assets/grol_logo_v2.png" alt="" className="w-5 h-5 object-contain" />
+                Grol Media
+              </div>
+              <div className="cmp-h cmp-h--other">Most SaaS agencies</div>
+            </div>
+
+            {comparison.map((r) => (
+              <div key={r.label} className="cmp-row cmp-grid grid">
+                <div className="cmp-label">{r.label}</div>
+                <div className="cmp-cell cmp-cell--grol cmp-col-grol">
+                  <span className="cmp-mini md:hidden">Grol Media</span>
+                  <span className="cmp-pt">
+                    <svg className="cmp-ico" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M3.5 8.5l3 3 6-7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    <span>{r.grol}</span>
+                  </span>
+                </div>
+                <div className="cmp-cell cmp-cell--other">
+                  <span className="cmp-mini md:hidden">Most agencies</span>
+                  <span className="cmp-pt">
+                    <svg className="cmp-ico" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M4 8h8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                    </svg>
+                    <span>{r.other}</span>
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}
+
+function Pricing() {
+  const rootRef = React.useRef(null);
+  React.useEffect(() => {
+    const els = rootRef.current?.querySelectorAll('.reveal') || [];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  const openCal = (e) => { e.preventDefault(); window.dispatchEvent(new Event('open-calendly')); };
+
+  const check = (
+    <svg className="pl-ico" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M3.5 8.5l3 3 6-7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>);
+
+  const plans = [
+    {
+      id: 'starter',
+      featured: true,
+      kicker: 'Starter',
+      name: <>Results-based Meta Ads <span className="font-serif italic font-normal">Acquisition</span></>,
+      amount: '€400',
+      unit: 'one-time set-up fee',
+      includes: [
+        'Competitor analysis + a strategy and positioning tailored to your SaaS',
+        'A dedicated landing page built for your ICP',
+        'Full ad creative production',
+        'Full conversion tracking setup',
+        'Weekly strategy calls'
+      ]
+    },
+    {
+      id: 'grower',
+      kicker: 'Grower',
+      name: <>Meta Ads scale &amp; <span className="font-serif italic font-normal">product improvement</span></>,
+      amount: '€1,099',
+      unit: 'per month',
+      inherit: 'Everything in Starter, plus',
+      includes: [
+        'Product-led advice drawn from session recordings we watch daily',
+        'Ongoing testing of new ICPs - landing pages + ads - to push your CPA as low as it goes'
+      ]
+    },
+    {
+      id: 'scaler',
+      kicker: 'Scaler',
+      name: <>Acquisition &amp; Retention <span className="font-serif italic font-normal">at Scale</span></>,
+      amount: '€1,999',
+      unit: 'per month',
+      inherit: 'Everything in Grower, plus',
+      includes: [
+        'Email flows that raise activation and LTV while cutting churn',
+        'Dedicated UGC creators + high-end video production for your brand',
+        'Social media management'
+      ]
+    }
+  ];
+
+  return (
+    <section id="pricing" ref={rootRef} className="relative w-full bg-black overflow-hidden -mt-10 md:-mt-16">
+      <ParticleFieldLocal density={50} opacity={[0.14, 0.42]} />
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse at 50% 18%, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 55%)' }}>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pt-2 md:pt-4 pb-24 md:pb-32">
+        <div className="reveal flex flex-col items-center text-center mb-12 md:mb-16">
+          <span className="block text-[11px] md:text-xs uppercase tracking-[0.18em] text-muted-foreground mb-4">Pricing</span>
+          <h2
+            className="text-[2rem] sm:text-4xl md:text-6xl font-medium leading-[1.05] md:leading-[1.1] max-w-3xl"
+            style={{ letterSpacing: '-1px' }}>
+            
+            Start on <span className="font-serif italic font-normal">results</span>
+            <br />
+            Scale when it works
+          </h2>
+          <p
+            className="mt-5 md:mt-6 text-[15px] sm:text-base font-normal leading-[1.55] opacity-80 max-w-xl"
+            style={{ color: 'hsl(var(--hero-subtitle))' }}>
+            
+            Begin with a results-based month. If the numbers land, we grow with you - step by step.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-5 items-stretch">
+          {plans.map((p) => (
+            <div
+              key={p.id}
+              className={'reveal price-card flex flex-col p-6 md:p-7 ' + (p.featured ? 'price-card--featured md:-mt-3 md:mb-3' : '')}>
+              
+              <div className="flex items-center justify-between mb-5 min-h-[26px]">
+                <span className="price-kicker">{p.kicker}</span>
+                {p.featured ? <span className="price-badge">Most popular</span> : null}
+              </div>
+
+              <h3 className="text-[1.4rem] md:text-[1.6rem] font-medium leading-[1.12] mb-5 min-h-[3.4rem]" style={{ letterSpacing: '-0.5px' }}>
+                {p.name}
+              </h3>
+
+              <div className="flex items-end gap-2 mb-1">
+                <span className="price-amount">{p.amount}</span>
+              </div>
+              <span className="price-unit mb-6">{p.unit}</span>
+
+              <a
+                href="https://calendly.com/grolmedia-agency/30min"
+                onClick={openCal}
+                rel="noopener noreferrer"
+                className={'price-btn mb-7 ' + (p.featured ? 'price-btn--solid' : 'price-btn--ghost')}>
+                
+                Let's discuss
+              </a>
+
+              <div className="price-divider mb-6"></div>
+
+              {p.inherit ? <span className="price-inherit block mb-4">{p.inherit}</span> : null}
+
+              <ul className="flex flex-col gap-3.5 mb-6">
+                {p.includes.map((it, idx) => (
+                  <li key={idx} className="price-li">
+                    {check}
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {p.featured ? (
+                <div className="price-note mt-auto">
+                  <b>Results-based for 45 days.</b> You only pay when we deliver: for every customer we bring you, we earn their first month - nothing more. Land a customer on your €99/mo plan and that's <b>€99 to us, once</b>. Happy after the 45 days? We move you onto the <b>Grower</b> plan.
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+
+        <div className="reveal mt-5 md:mt-6">
+          <div className="price-card flex flex-col md:flex-row md:items-center justify-between gap-5 md:gap-8 p-6 md:p-8">
+            <div className="max-w-xl">
+              <h3 className="text-[1.35rem] md:text-[1.6rem] font-medium leading-tight mb-2" style={{ letterSpacing: '-0.4px' }}>
+                Something more <span className="font-serif italic font-normal">custom</span>?
+              </h3>
+              <p className="text-[14px] md:text-[15px] leading-[1.55] opacity-75">
+                Bigger scope, a different setup, or not sure which plan fits? Book a call and we'll shape something around your goals.
+              </p>
+            </div>
+            <a
+              href="https://calendly.com/grolmedia-agency/30min"
+              onClick={openCal}
+              rel="noopener noreferrer"
+              className="btn-press bg-white text-black rounded-full px-7 py-3.5 text-[15px] sm:text-base font-medium inline-flex items-center justify-center whitespace-nowrap cursor-pointer shrink-0">
+              
+              Book a call
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}
+
+function Testimonials() {
+  const rootRef = React.useRef(null);
+  const [idx, setIdx] = React.useState(0);
+  const [paused, setPaused] = React.useState(false);
+
+  const items = [
+    {
+      quote: <>They work hard, move quickly, and proactively solve problems before you even have to ask. They always come with solutions, resources, and a strong sense of ownership. They got us sign-ups for just <span className="font-serif italic font-normal">$10 each</span>.</>,
+      img: 'assets/samy_barbier.jpeg',
+      org: 'Samy Barbier',
+      role: 'CEO, GenPage',
+      linkedin: 'https://www.linkedin.com/in/samy-barbier/'
+    },
+    {
+      quote: <>This team brought us qualified leads for our B2B SaaS solution at just <span className="font-serif italic font-normal">$25 per lead</span> - something we had been struggling with for months.</>,
+      img: 'assets/marko_balazic.jpeg',
+      org: 'Marko Balažic',
+      role: 'ProductAI, Shape',
+      linkedin: 'https://www.linkedin.com/in/markobalazic/'
+    }
+  ];
+
+  React.useEffect(() => {
+    const els = rootRef.current?.querySelectorAll('.reveal') || [];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  React.useEffect(() => {
+    if (paused) return;
+    const t = setInterval(() => setIdx((p) => (p + 1) % items.length), 7000);
+    return () => clearInterval(t);
+  }, [paused, items.length]);
+
+  const go = (n) => setIdx((n + items.length) % items.length);
+  const t = items[idx];
+
+  return (
+    <section id="testimonials" ref={rootRef} className="relative w-full bg-black overflow-hidden -mt-10 md:-mt-16">
+      <ParticleFieldLocal density={48} opacity={[0.13, 0.4]} />
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse at 50% 25%, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 58%)' }}>
+      </div>
+
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 md:px-10 pt-2 md:pt-4 pb-24 md:pb-32">
+        <div className="reveal flex flex-col items-center text-center mb-10 md:mb-14">
+          <span className="block text-[11px] md:text-xs uppercase tracking-[0.18em] text-muted-foreground mb-4">Testimonials</span>
+          <h2
+            className="text-[2rem] sm:text-4xl md:text-[3.25rem] font-medium leading-[1.08] max-w-2xl"
+            style={{ letterSpacing: '-0.8px' }}>
+            
+            What our clients <span className="font-serif italic font-normal">say</span>
+          </h2>
+        </div>
+
+        <div
+          className="reveal relative"
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}>
+          
+          <div className="relative flex items-stretch gap-3 md:gap-6">
+            <button className="testi-arrow self-center hidden sm:inline-flex" aria-label="Previous" onClick={() => go(idx - 1)}>
+              <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M9 2L4 7l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <div className="flex-1">
+              <div className="price-card p-7 sm:p-10 md:p-14 min-h-[300px] md:min-h-[320px] flex flex-col justify-center">
+                <span className="testi-mark text-6xl md:text-7xl mb-1 select-none" aria-hidden="true">"</span>
+                <blockquote key={idx} className="testi-anim">
+                  <p
+                    className="text-[1.3rem] sm:text-[1.6rem] md:text-[2rem] font-medium leading-[1.32] md:leading-[1.3] -mt-3"
+                    style={{ letterSpacing: '-0.4px' }}>
+                    
+                    {t.quote}
+                  </p>
+                  <footer className="mt-7 md:mt-9 flex items-center gap-3.5">
+                    {t.img
+                      ? <img src={t.img} alt={t.org} className="testi-avatar object-cover" />
+                      : <span className="testi-avatar" aria-hidden="true">{t.initial}</span>}
+                    <span className="text-left">
+                      <span className="flex items-center gap-2">
+                        <span className="text-[15px] md:text-base font-medium leading-tight">{t.org}</span>
+                        {t.linkedin
+                          ? <a href={t.linkedin} target="_blank" rel="noopener noreferrer" aria-label={'LinkedIn profile of ' + t.org} className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-white/15 text-white/70 hover:text-white hover:border-white/40 transition-colors">
+                              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z" /></svg>
+                            </a>
+                          : null}
+                      </span>
+                      <span className="block text-[12.5px] md:text-[13px] text-muted-foreground mt-0.5 leading-tight">{t.role}</span>
+                    </span>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+
+            <button className="testi-arrow self-center hidden sm:inline-flex" aria-label="Next" onClick={() => go(idx + 1)}>
+              <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M5 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          </div>
+
+          <div className="flex items-center justify-center gap-4 mt-7 md:mt-8">
+            <button className="testi-arrow sm:hidden" aria-label="Previous" onClick={() => go(idx - 1)}>
+              <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M9 2L4 7l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            <div className="flex items-center gap-2.5">
+              {items.map((_, i) => (
+                <button
+                  key={i}
+                  className={'testi-dot ' + (i === idx ? 'testi-dot--on' : '')}
+                  aria-label={'Go to testimonial ' + (i + 1)}
+                  onClick={() => go(i)}>
+                </button>
+              ))}
+            </div>
+            <button className="testi-arrow sm:hidden" aria-label="Next" onClick={() => go(idx + 1)}>
+              <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M5 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}
+
+function Contact() {
+  const rootRef = React.useRef(null);
+  React.useEffect(() => {
+    const els = rootRef.current?.querySelectorAll('.reveal') || [];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <section id="contact" ref={rootRef} className="relative w-full bg-black overflow-hidden -mt-10 md:-mt-16">
+      <ParticleFieldLocal density={50} opacity={[0.16, 0.45]} />
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          background:
+          'radial-gradient(ellipse at 50% 30%, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 60%)'
+        }}>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 pt-2 md:pt-4 pb-24 md:pb-32 flex flex-col items-center text-center">
+        <div className="reveal flex flex-col items-center">
+          <p
+            className="text-[15px] sm:text-lg font-normal leading-[1.5] opacity-85 mb-8 md:mb-10 max-w-xl"
+            style={{ color: 'hsl(var(--hero-subtitle))' }}>
+            
+            Book a free 30-minute call. We'll map your funnel,
+            <br className="hidden sm:block" />
+            spot the leaks, and tell you exactly where to start.
+          </p>
+
+          <p
+            className="text-sm sm:text-base mb-8 sm:mb-9 max-w-xl mx-auto"
+            style={{ color: 'hsl(var(--hero-subtitle) / 0.7)' }}>
+            No pressure to sign. If the call isn't what you hoped for, you walk away with a free plan anyway.
+          </p>
+
+          <div className="flex items-center justify-center w-full sm:w-auto px-4 sm:px-0">
+            <a
+              href="https://calendly.com/grolmedia-agency/30min"
+              onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('open-calendly')); }}
+              rel="noopener noreferrer"
+              className="btn-press bg-foreground text-background rounded-full px-8 py-3.5 text-base font-medium inline-flex items-center justify-center w-full sm:w-auto cursor-pointer">
+              
+              Get a Marketing Plan
+            </a>
+          </div>
+
+          <div className="mt-12 md:mt-16 w-full max-w-3xl border-t border-white/10 pt-8 md:pt-10 flex flex-col md:flex-row items-center md:items-center justify-between gap-6 md:gap-8 text-[13px] md:text-sm">
+            <a
+              href="https://www.linkedin.com/company/grol-media/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="btn-press w-10 h-10 rounded-full inline-flex items-center justify-center border border-white/15 hover:border-white/40 hover:bg-white/5 transition-colors text-white/85 hover:text-white">
+              
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001zM3 9.5h4v11H3v-11zM10 9.5h3.84v1.5h.05c.53-1 1.84-2.06 3.79-2.06C21.6 8.94 22 11.3 22 14.16V20.5h-4v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V20.5h-4v-11z">
+                </path>
+              </svg>
+            </a>
+
+            <div className="text-muted-foreground text-center md:text-left leading-[1.5]">
+              <span className="text-white/70">Solun, 7000 Ruse</span>
+              <span className="opacity-50">  ·  </span>
+              <span>Bulgaria</span>
+            </div>
+
+            <a
+              href="privacy-policy/"
+              className="text-muted-foreground hover:text-white transition-colors underline-offset-4 hover:underline">
+              
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}
+
+function CalendlyModal() {
+  const [open, setOpen] = React.useState(false);
+  const wrapRef = React.useRef(null);
+  const initRef = React.useRef(false);
+
+  React.useEffect(() => {
+    const onOpen = () => setOpen(true);
+    window.addEventListener('open-calendly', onOpen);
+    return () => window.removeEventListener('open-calendly', onOpen);
+  }, []);
+
+  React.useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+      const onKey = (e) => { if (e.key === 'Escape') setOpen(false); };
+      window.addEventListener('keydown', onKey);
+      return () => {
+        document.body.style.overflow = '';
+        window.removeEventListener('keydown', onKey);
+      };
+    }
+  }, [open]);
+
+  React.useEffect(() => {
+    if (!open) { initRef.current = false; return; }
+    if (initRef.current) return;
+    const tryInit = () => {
+      if (window.Calendly && wrapRef.current) {
+        wrapRef.current.innerHTML = '';
+        window.Calendly.initInlineWidget({
+          url: 'https://calendly.com/grolmedia-agency/30min?hide_event_type_details=0&hide_gdpr_banner=1&background_color=0a0a0a&text_color=ffffff&primary_color=ffffff',
+          parentElement: wrapRef.current
+        });
+        initRef.current = true;
+      } else {
+        setTimeout(tryInit, 120);
+      }
+    };
+    tryInit();
+  }, [open]);
+
+  if (!open) return null;
+  return (
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center px-3 sm:px-6 py-6 sm:py-10"
+      style={{ background: 'rgba(0,0,0,0.78)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)' }}
+      onClick={(e) => { if (e.target === e.currentTarget) setOpen(false); }}>
+      
+      <div className="relative w-full max-w-[1080px] h-[88vh] sm:h-[86vh] rounded-2xl overflow-hidden border border-white/10 bg-[#0a0a0a] shadow-2xl">
+        <button
+          onClick={() => setOpen(false)}
+          aria-label="Close"
+          className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full inline-flex items-center justify-center border border-white/15 bg-black/50 hover:bg-white/10 hover:border-white/40 transition-colors text-white/85">
+          
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M3 3l8 8M11 3l-8 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          </svg>
+        </button>
+        <div ref={wrapRef} className="calendly-inline-widget w-full h-full" style={{ minWidth: 0 }}></div>
+      </div>
+    </div>);
+
+}
+
+function App() {return <><Nav /><main id="main"><Hero /><Services /><Mission /><Pricing /><Testimonials /><Contact /></main><CalendlyModal /></>;}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+(function revealApp() {
+  var root = document.getElementById('root');
+  function reveal() { root.classList.add('app-ready'); }
+  // Wait two frames after mount so Tailwind's injected stylesheet and the
+  // browser's layout pass have both been applied before we show anything.
+  requestAnimationFrame(function () { requestAnimationFrame(reveal); });
+  // Safety net - never leave the page blank if something above stalls.
+  setTimeout(reveal, 1500);
+})();
+
+
+
+</script>
+</body>
+</html>
