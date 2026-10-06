@@ -1,0 +1,21 @@
+# Grol Media
+
+> Grol Media is a SaaS marketing agency based in Bulgaria, founded by Georgi Georgiev. We help B2B SaaS companies acquire, retain, and grow through Meta Ads, lifecycle email flows, and product-level growth advice - engineered to lower CAC and grow LTV. We work on a results-based model, starting most engagements before any retainer is billed.
+
+## Services
+
+- [Meta Ads built for SaaS](https://grolmedia.com/meta-ads-for-saas/): Full-funnel paid acquisition on Meta, built specifically for B2B SaaS products.
+- [Product advice + GTM strategy](https://grolmedia.com/gtm-strategy/): Market research, positioning, offer and messaging, channel strategy and trial-to-paid optimization for early-stage SaaS.
+
+## Pricing
+
+- [Pricing plans](https://grolmedia.com/#pricing): Starter, Grower, Scaler, and custom plans - results-based to start.
+
+## Blog
+
+- [Blog index](https://grolmedia.com/blog/): SaaS marketing guides on Meta Ads, funnels, activation, and growth.
+
+## Contact
+
+- [Book a call](https://calendly.com/georgi-grolmedia/30min)
+- [LinkedIn - Georgi Georgiev, Founder](https://www.linkedin.com/in/georgi-georgiev-852a00370/)
